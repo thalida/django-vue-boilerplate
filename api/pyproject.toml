@@ -1,6 +1,6 @@
 # Ruf config: https://docs.astral.sh/ruff/configuration/
 [tool.poetry]
-name = "django-boilerplate"
+name = "api"
 version = "0.1.0"
 description = ""
 authors = []
