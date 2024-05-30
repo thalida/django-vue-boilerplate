@@ -12,11 +12,11 @@ class User(AbstractUser):
     EMAIL_FIELD = "email"
 
     @property
-    def display_name(self):
+    def display_name(self) -> str:
         return self.get_full_name() or self.email
 
     @property
-    def initials(self):
+    def initials(self) -> str:
         return "".join(list(map(lambda name: name[0].upper(), self.display_name.split(" "))))
 
     def __str__(self):
