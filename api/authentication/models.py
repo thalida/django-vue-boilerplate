@@ -15,6 +15,10 @@ class User(AbstractUser):
     def display_name(self):
         return self.get_full_name() or self.email
 
+    @property
+    def initials(self):
+        return "".join(list(map(lambda name: name[0].upper(), self.display_name.split(" "))))
+
     def __str__(self):
         return f"{self.display_name} ({self.email})"
 

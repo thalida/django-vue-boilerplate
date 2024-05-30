@@ -3,8 +3,8 @@
 set -o errexit
 
 set -o allexport
-source $WORKSPACE_FOLDER/.env
+source $WORKSPACE_FOLDER/api/.env
 set +o allexport
 
-cd $VSCODE_WORKSPACE_FOLDER/api
+cd $WORKSPACE_FOLDER/api
 poetry run python manage.py $*
