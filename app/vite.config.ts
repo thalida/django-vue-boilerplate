@@ -11,9 +11,9 @@ export default defineConfig({
     VitePWA({
       includeAssets: ['favicon.ico', 'apple-touch-icon-180x180.png', 'logo-white.svg'],
       manifest: {
-        name: 'Django Vue Boilerplate App',
-        short_name: 'Django Vue Boilerplate App',
-        description: 'A boilerplate app for Django and Vue.js',
+        name: 'App',
+        short_name: 'App',
+        description: 'My app',
         theme_color: '#dbeafe',
         icons: [
           {

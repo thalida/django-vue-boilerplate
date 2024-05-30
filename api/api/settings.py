@@ -224,8 +224,8 @@ SPECTACULAR_SETTINGS = {
 
 
 UNFOLD = {
-    "SITE_TITLE": "Admin Boilerplate",
-    "SITE_HEADER": "Admin Boilerplate",
+    "SITE_TITLE": "Admin",
+    "SITE_HEADER": "Admin",
     "SHOW_VIEW_ON_SITE": False,
     "LOGIN": {
         "redirect_after": lambda r: reverse_lazy("admin:index"),
