@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# exit on error
+set -o errexit
+
+set -o allexport
+source $WORKSPACE_FOLDER/.env
+set +o allexport
+
+cd $VSCODE_WORKSPACE_FOLDER/api
+poetry run python manage.py $*

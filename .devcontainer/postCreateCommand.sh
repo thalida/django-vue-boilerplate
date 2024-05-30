@@ -1,7 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-cd /workspaces/django-react-boilerplate/backend
+cd $WORKSPACE_FOLDER/api
 poetry install
+pre-commit install
 
-cd /workspaces/django-react-boilerplate/frontend
-npm install
+# cd $WORKSPACE_FOLDER/app
+# npm install

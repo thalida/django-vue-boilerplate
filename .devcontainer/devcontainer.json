@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/postgres
 {
-	"name": "Django React Boilerplate",
+	"name": "Django Vue Boilerplate",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
@@ -32,7 +32,7 @@
 				"python.testing.unittestEnabled": true,
 				"python.testing.pytestEnabled": true,
 				"python.analysis.extraPaths": [
-					"/workspaces/${localWorkspaceFolderBasename}/backend"
+					"/workspaces/${localWorkspaceFolderBasename}/api"
 				],
 				"[python]": {
 					"editor.formatOnSave": true,
