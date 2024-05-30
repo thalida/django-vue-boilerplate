@@ -9,13 +9,16 @@
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {},
 		"ghcr.io/devcontainers-contrib/features/poetry:2": {},
-		"ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
+		"ghcr.io/devcontainers-contrib/features/pre-commit:2": {},
+		"ghcr.io/itsmechlark/features/redis-server:1": {}
 	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// This can be used to network with other containers or the host.
 	"forwardPorts": [
 		8000,
-		3000
+		5173,
+		6379,
+		"db:5432"
 	],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "bash -i /workspaces/${localWorkspaceFolderBasename}/.devcontainer/postCreateCommand.sh",
@@ -48,7 +51,13 @@
 				"sleistner.vscode-fileutils",
 				"charliermarsh.ruff",
 				"ms-python.vscode-pylance",
-				"yzhang.markdown-all-in-one"
+				"yzhang.markdown-all-in-one",
+				"Vue.volar",
+				"ms-python.python",
+				"esbenp.prettier-vscode",
+				"rvest.vs-code-prettier-eslint",
+				"YoavBls.pretty-ts-errors",
+				"bradlc.vscode-tailwindcss"
 			]
 		}
 	}
