@@ -5,7 +5,6 @@ services:
   # App
   - type: web
     name: django-vue-boilerplate:app
-    env: static
     rootDir: app/
     buildFilter:
       paths:
@@ -24,7 +23,7 @@ services:
   # API
   - type: web
     name: django-vue-boilerplate:api
-    env: python
+    runtime: python
     plan: starter
     rootDir: api/
     buildFilter:
